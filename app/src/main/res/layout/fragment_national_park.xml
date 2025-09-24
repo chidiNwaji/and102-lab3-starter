@@ -29,7 +29,6 @@
         app:layout_constraintTop_toBottomOf="@+id/location"
         app:layout_constraintStart_toEndOf="@+id/park_image" />
 
-    <!-- TODO: Add park image -->
     <ImageView
         android:id="@+id/park_image"
         android:layout_width="150dp"
@@ -39,7 +38,6 @@
         app:srcCompat="@android:drawable/ic_menu_gallery"
         />
 
-    <!-- TODO: Add location or other details -->
     <TextView
         android:id="@+id/location"
         android:layout_width="wrap_content"

@@ -24,8 +24,7 @@ class NationalPark {
     @JvmField
     @SerializedName("states")
     var location: String? = null
-
-    //TODO parkImageUrl
+    
     @SerializedName("images")
     var images: List<Image>? = null
 
@@ -36,6 +35,4 @@ class NationalPark {
         @SerializedName("url")
         var url: String? = null
     }
-
-    //TODO-STRETCH-GOALS
 }

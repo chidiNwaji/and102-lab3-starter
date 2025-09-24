@@ -29,7 +29,6 @@ class NationalParksRecyclerViewAdapter(
     inner class ParkViewHolder(val mView: View) : RecyclerView.ViewHolder(mView) {
         var mItem: NationalPark? = null
 
-        // TODO: Step 4a - Add references for remaining views from XML
         val mParkName: TextView = mView.findViewById(id.park_name)
         val mParkDescription: TextView = mView.findViewById(id.park_description)
         val mParkLocation: TextView = mView.findViewById(R.id.location)
@@ -43,13 +42,12 @@ class NationalParksRecyclerViewAdapter(
     override fun onBindViewHolder(holder: ParkViewHolder, position: Int) {
         val park = parks[position]
 
-        // TODO: Step 4b - Bind the park data to the views
+
         holder.mItem = park
         holder.mParkName.text = park.name
         holder.mParkLocation.text = park.location
         holder.mParkDescription.text = park.description
 
-        // TODO: Step 4c - Use Glide to load the first image
         val imageUrl = park.imageUrl
         Glide.with(holder.mView)
             .load(imageUrl)
