@@ -24,7 +24,7 @@ class NationalPark {
     @JvmField
     @SerializedName("states")
     var location: String? = null
-    
+
     @SerializedName("images")
     var images: List<Image>? = null
 
